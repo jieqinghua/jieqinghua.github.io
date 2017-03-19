@@ -1,16 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta content="width=device-width,user-scalable=no" name="viewport"> 
+<meta content="width=device-width,user-scalable=no" name="viewport" charset="utf-8"> 
   <style type="text/css">
-    body{background-color:#333;}
-    .sayhi{color:#fff}
+    body{
+	text-align: center;
+	background-color: #fff;
+	margin-top: 100px;
+}
+.welcome{
+	color: #4C85E8;
+	font-size: x-large;
+
+}
   </style>
 <title>JieQinghua's github site</title>
+<script src="p5.min.js"></script>
 </head>
 <body>
-  <p class="sayhi">
-嗨~ 我叫揭青华<br/>我是一名交互设计师，也是业余编程爱好者。
-  </p>
+	
+<script type="text/javascript">
+
+function setup(){
+	createCanvas(400,400,WEBGL);
+}
+
+function draw(){
+	background(250);
+
+ translate(0, 0, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  box(70, 70, 70);
+  pop();
+
+}
+
+</script>
+<p class="welcome">WELCOME</p>
+<p class="myname">我叫揭青华。<br>我是一名交互设计师，也是一个业余编程爱好者。 </p>
 </body>
 </html>
